@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainPage">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnselect"
+        android:textStyle="bold"
+        android:background="@color/lightgreen"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:shadowColor="@color/myfav3"
+        android:shadowRadius="10"
+        android:shadowDy="10"
+        android:shadowDx="5"
+        android:layout_marginTop="20dp"
+        android:text="Select Video"></Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true">
+
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/videoview"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"></VideoView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="Original Video"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="true">
+
+        <VideoView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:id="@+id/videoview2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"></VideoView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview2"
+        android:text="Compressed Video"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview3"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"></TextView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/lightgreen"
+                android:text="Download Video"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:id="@+id/btndownload"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textStyle="bold"
+                ></Button>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
